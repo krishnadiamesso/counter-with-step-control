@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+}
+
+.counter-page {
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  box-sizing: border-box;
+  background: #eef2f7;
+  color: #172033;
+  font-family: system-ui, sans-serif;
+}
+
+.counter-card {
+  box-sizing: border-box;
+  width: min(100%, 24rem);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background: white;
+  box-shadow: 0 8px 24px rgb(23 32 51 / 10%);
+}
+
+.counter-card h1 {
+  margin: 0 0 1.5rem;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.counter-controls {
+  display: grid;
+  grid-template-columns: 2.75rem minmax(0, 1fr) 2.75rem;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.counter-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+.counter-card button,
+.counter-card input {
+  font: inherit;
+  border: 1px solid #aab6c6;
+  border-radius: 0.5rem;
+}
+
+.counter-card button {
+  min-height: 2.75rem;
+  background: #f1f5f9;
+  color: inherit;
+  cursor: pointer;
+}
+
+.counter-card button:hover {
+  background: #e2e8f0;
+}
+
+.step-control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin: 1.25rem 0 0.75rem;
+}
+
+.step-control input {
+  width: 5rem;
+  padding: 0.5rem;
+}
+
+.reset-button {
+  width: 100%;
+}
+
+.counter-card :focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 3px;
+}
